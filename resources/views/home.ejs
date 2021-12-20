@@ -1,0 +1,13 @@
+<div class="messagecontainer">
+    <div class="meassageArea">
+        <div class="textArea"></div>
+        <div class="restArea">
+            <input type="text" name="" id="writtenText" placeholder="Enter message!!!!!">
+            <% if(user) { %>
+                <button class="btn btn-outline-dark" id="userSend" type="button">Send</button>
+            <% } else { %>
+                <button class="btn btn-outline-dark" id="userSend" type="button" disabled>Send</button>
+            <% } %>
+        </div>
+    </div>
+</div>
