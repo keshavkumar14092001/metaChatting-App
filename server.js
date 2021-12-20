@@ -6,8 +6,6 @@ const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const session = require('express-session');
-const mongoDbStore = require('connect-mongo');
 const flash = require('express-flash');
 const http = require('http');
 const server = http.createServer(app);
@@ -20,17 +18,6 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
     console.log('***DB Connected***');
 });
-
-// Configuring Express session:
-app.use(session({
-    secret: process.env.COOKIES_SECRET,
-    resave: false,
-    store: mongoDbStore.create({
-        mongoUrl: process.env.MONGO_CONNECTION_URL
-    }),
-    saveUninitialized: false,
-    cookie: { maxAge: 1000 * 60 * 60 * 24 }
-}));
 
 // Configuring Passport.js:
 const passportInit = require('./app/config/passport');
