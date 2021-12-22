@@ -1,26 +1,5 @@
 /* Header Section */
 
-.auth {
-    color: #000;
-    text-decoration: none;
-    border: 2px solid #000;
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 0px 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.auth:hover {
-    background: black;
-    color: #89c4ee;
-    border: 2px solid #fff;
-    transition: background 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
-}
-
 .firstHalf {
     color: #fff !important;
     text-decoration: none;
@@ -157,50 +136,14 @@ p {
     justify-content: space-evenly;
 }
 
-/* Registrartion Part */
-
-.registerContainer {
-    width: 900px;
-    height: 600px;
-    padding-top: 10px;
-    margin-top: 61px;
-    margin-bottom: 61px;
-}
-
-.loginContainer {
-    width: 900px;
-    height: 400px;
-    padding-top: 10px;
-    margin-top: 143px;
-    margin-bottom: 143px;
-}
-
-.contactContainer form {
-    width: 90%;
-    margin: auto;
-}
-
-.registerContainer form {
-    width: 90%;
-    height: 500px;
-    margin: auto;
-    margin-top: 40px;
-}
-
-.loginContainer form {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
-
 /* Responsive Design */
 
 @media(max-width: 770px) {
-    .messagecontainer{
+    .messagecontainer {
         width: 96%;
     }
 
-    .textArea{
+    .textArea {
         height: 647px;
     }
 }
@@ -211,11 +154,6 @@ p {
 
     .firstHalf {
         font-size: 25px;
-    }
-
-    .auth {
-        margin: 0px 5px;
-        font-size: 15px;
     }
 
     .messagecontainer {
@@ -254,18 +192,6 @@ p {
     .restArea button {
         width: 27%;
     }
-
-    .registerContainer {
-        width: 336px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .loginContainer {
-        width: 336px;
-        margin-top: 50px;
-        margin-bottom: 87px;
-    }
 }
 
 @media(max-width:420px) {
@@ -286,47 +212,9 @@ p {
         font-size: 20px;
     }
 
-    .registerContainer {
-        width: 388px;
-    }
-
-    .loginContainer {
-        width: 388px;
-        margin-top: 109px;
-        margin-bottom: 120px;
-    }
-
-}
-
-@media (max-width: 380px) {
-
-    .registerContainer {
-        width: 352px;
-    }
-
-    .loginContainer {
-        width: 353px;
-        margin-top: 79px;
-        margin-bottom: 85px;
-    }
-
 }
 
 @media (max-width:330px) {
-
-    .auth {
-        margin: 0px 2px;
-    }
-
-    .registerContainer {
-        width: 296px;
-    }
-
-    .loginContainer {
-        width: 296px;
-        margin-top: 35px;
-        margin-bottom: 33px;
-    }
 
     .writingPart h4 {
         font-size: 14px;
